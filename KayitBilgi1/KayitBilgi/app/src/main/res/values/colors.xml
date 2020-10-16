@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3b3f59</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_color">#ffffff</color>
+    <color name="border_color">#FF4888</color>
+    <color name="radio_color">#c0c0c0</color>
+</resources>

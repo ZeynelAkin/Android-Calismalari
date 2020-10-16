@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    >
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClickk"
+                android:text="GENEL" />
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp">
+
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/bord"
+                            android:onClick="onClick"
+                            android:padding="5dp"
+                            android:text="Ev zemini, özellikle ıslak alanlar kolayca kayabilecek materyalden mi yapılmış?"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.TextView"
+                            android:textSize="13sp"
+                            android:visibility="gone"
+
+                            />
+
+                    </android.support.constraint.ConstraintLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/rg1"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evet"
+                            android:visibility="gone"
+                            android:buttonTint="@color/radio_color"
+                            app:buttonTint="@color/radio_color"
+                            />
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hayır"
+                            android:visibility="gone"
+                            android:buttonTint="@color/radio_color"
+                            app:buttonTint="@color/radio_color"/>
+
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bord"
+                            android:padding="5dp"
+                            android:text="Zemine kayabilecek halı, kilim vb. serilmiş mi?"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.TextView"
+
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/rg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp">
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evet"
+                            android:visibility="gone" />
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hayır"
+                            android:visibility="gone" />
+
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bord"
+                            android:padding="5dp"
+                            android:text="Halı, kilim vb yaygınların kenarları düşmeye yol açabilecek biçimde kalkık veya kıvrılmış durumda mı?"
+                            android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp">
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evet"
+                            android:visibility="gone" />
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hayır"
+                            android:visibility="gone" />
+
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView14"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bord"
+                            android:padding="5dp"
+                            android:text="Banyo düzeni yaşlıların kaymalarını, çarpmalarını önleyecek biçimde mi? Küvet, duş ve gereken yerlerde tutunmayı sağlayacak tutamaklar var mı?"
+                            android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp">
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evet"
+                            android:visibility="gone" />
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hayır"
+                            android:visibility="gone" />
+
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tertip - Düzen" />
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/bord"
+                            android:onClick="onClick"
+                            android:padding="5dp"
+                            android:text="Ev zemini, özellikle ıslak alanlar kolayca kayabilecek materyalden mi yapılmış?"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.TextView"
+                            android:textSize="13sp"
+                            android:visibility="gone"
+
+                            />
+
+                    </android.support.constraint.ConstraintLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evet"
+                            android:visibility="gone" />
+
+                        <RadioButton
+
+
+                            android:id="@+id/radioButton10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hayır"
+                            android:visibility="gone" />
+
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bord"
+                            android:padding="5dp"
+                            android:text="Zemine kayabilecek halı, kilim vb. serilmiş mi?"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.TextView"
+
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp">
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evet"
+                            android:visibility="gone" />
+
+                        <RadioButton
+
+
+                            android:id="@+id/radioButton12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hayır"
+                            android:visibility="gone" />
+
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bord"
+                            android:padding="5dp"
+                            android:text="Halı, kilim vb yaygınların kenarları düşmeye yol açabilecek biçimde kalkık veya kıvrılmış durumda mı?"
+                            android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp">
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evet"
+                            android:visibility="gone" />
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hayır"
+                            android:visibility="gone" />
+
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView18"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bord"
+                            android:padding="5dp"
+                            android:text="Banyo düzeni yaşlıların kaymalarını, çarpmalarını önleyecek biçimde mi? Küvet, duş ve gereken yerlerde tutunmayı sağlayacak tutamaklar var mı?"
+                            android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp">
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evet"
+                            android:visibility="gone" />
+
+                        <RadioButton
+
+                            android:id="@+id/radioButton16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hayır"
+                            android:visibility="gone" />
+
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Öneriler" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

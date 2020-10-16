@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kb.user.kayitbilgi">
+
+    //classların tanımlandıgıdıgı .xml sayfayı
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ikincisayfaa"
+            android:label="@string/ikincisayfa"
+            >
+
+        </activity>
+        <activity
+            android:name=".Genelsorular"
+            android:label="@string/GenelSorular"
+            ></activity>
+        <activity
+            android:name=".Oneriler"
+            android:label="@string/Oneri"
+            ></activity>
+        <activity
+            android:name=".Rapor"
+            android:label="@string/Rapor"
+            ></activity>
+
+    </application>
+
+</manifest>

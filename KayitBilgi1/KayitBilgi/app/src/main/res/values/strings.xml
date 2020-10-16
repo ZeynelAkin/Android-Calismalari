@@ -1,0 +1,7 @@
+    <resources>
+    <string name="app_name">Üye Arama</string>
+        <string name="ikincisayfa" >Yeni Kayıt Girişi</string>
+        <string name="GenelSorular">Genel Sorular</string>
+        <string name="Oneri">Öneriler</string>
+        <string name="Rapor">Raporlar</string>
+</resources>

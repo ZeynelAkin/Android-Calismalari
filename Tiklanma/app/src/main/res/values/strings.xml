@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tiklanma</string>
+    <string name="title_activity_tiklama">TiklamaActivity</string>
+</resources>

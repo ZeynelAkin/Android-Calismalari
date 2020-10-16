@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyDiary</string>
+    <string name="button1">ENTER</string>
+    <string name="button2">SAVE  :)</string>
+</resources>

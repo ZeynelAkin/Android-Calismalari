@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    >
+
+    <TableLayout
+        android:id="@+id/tabla_cuerpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:stretchColumns="*"
+        android:background="@drawable/kenarrapoor"
+
+
+
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:id="@+id/rprText1"
+                style="@style/MtTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Ürün Adı"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/background_dark">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/rprText2"
+                style="@style/MtTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Adet"></TextView>
+
+            <TextView
+                android:id="@+id/rprText3"
+                style="@style/MtTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Tutar (₺)"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/rprText4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="kamera"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="75"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rprText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="Tutunma Yeri"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText8"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="50"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rprText10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdedi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunFiyati"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rprText13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdedi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunFiyati"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rprText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdedi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunFiyati"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rprText19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdedi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunFiyati"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rprText22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdedi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunFiyati"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rprText25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunAdedi"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/rprText27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="@drawable/rapor_tablosu"
+                android:gravity="center"
+                android:hint="urunFiyati"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/hesaapla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Hesapla"
+        android:text="Hesapla" />
+
+    <TextView
+        android:id="@+id/toplamtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MtTextViewStyle"
+        android:text="Toplam Tutar : "
+        android:layout_marginTop="10dp"
+
+        />
+
+
+</LinearLayout>
